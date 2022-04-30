@@ -13,3 +13,23 @@
   font-size: 1.5em;
 }
 
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
+
+.pictureContainer {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  max-width: 100px;
+}
+
+.displayDescription {
+  opacity: .5;
+  position: absolute;
+}
