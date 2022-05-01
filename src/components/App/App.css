@@ -18,7 +18,7 @@ li {
 }
 
 img {
-  max-width: 100px;
+  width: 200px;
   height: auto;
 }
 
@@ -26,7 +26,7 @@ img {
   display: inline-block;
   position: relative;
   text-align: center;
-  max-width: 100px;
+  width: 200px;
 }
 
 .displayDescription {
