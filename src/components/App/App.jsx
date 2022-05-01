@@ -41,7 +41,10 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
+        <main>
         <GalleryList galleryList={galleryList} putLikes={putLikes}/>
+        </main>
+        <footer>All the things @ et al assorted lorem ipsum</footer>
       </div>
     );
 }

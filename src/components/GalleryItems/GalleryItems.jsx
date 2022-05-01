@@ -17,15 +17,17 @@ function GalleryItems({picture, putLikes}) {
         if (pictureClicked) {
             return (
                 <div className="pictureContainer">
-                    <img src={picture.path} onClick={clickPicture} className="displayDescription" />
+                    <span><img src={picture.path} onClick={clickPicture} className="displayDescription" /></span>
                     <div onClick={clickPicture}>{picture.description}</div>
-                    <p><button onClick={handleLikes}>Like</button>Likes: {picture.likes}</p>
+                    <span><p><button onClick={handleLikes}>Like
+                    </button>Likes: {picture.likes}</p></span>
                 </div>
         )} else {
             return (
                 <div className="pictureContainer">
                     <img src={picture.path} onClick={clickPicture} />
-                    <p><button onClick={handleLikes}>Like</button>Likes: {picture.likes}</p>
+                    <span><p><button onClick={handleLikes}>Like
+                    </button> Likes: {picture.likes}</p></span>
                 </div>
             )
         }
