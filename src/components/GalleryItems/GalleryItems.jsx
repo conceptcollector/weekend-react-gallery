@@ -16,18 +16,23 @@ function GalleryItems({picture, putLikes}) {
     const renderDescriptionText = () => {
         if (pictureClicked) {
             return (
-                <div className="pictureContainer">
-                    <span><img src={picture.path} onClick={clickPicture} className="displayDescription" /></span>
-                    <div onClick={clickPicture}>{picture.description}</div>
-                    <span><p><button onClick={handleLikes}>Like
-                    </button>Likes: {picture.likes}</p></span>
+                <div className="pictureBlock">
+                    <div className="pictureContainer">
+                    <span><img src={picture.path} onClick={clickPicture} /></span>
+                    <div className="displayDescription">
+                        {picture.description}</div>
+                    </div>
+                    <p className="likeButton"><button onClick={handleLikes}>Like
+                    </button>Likes: {picture.likes}</p>
                 </div>
         )} else {
             return (
+                <div className="pictureBlock">
                 <div className="pictureContainer">
                     <img src={picture.path} onClick={clickPicture} />
-                    <span><p><button onClick={handleLikes}>Like
-                    </button> Likes: {picture.likes}</p></span>
+                    <p className="likeButton"><button onClick={handleLikes}>Like
+                    </button> Likes: {picture.likes}</p>
+                </div>
                 </div>
             )
         }

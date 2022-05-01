@@ -1,13 +1,12 @@
 .App {
-  min-height: 100vh;
-  background-color: #008080;
+  background-color: #408000;
+  z-index: 0;
 }
 
 .App-header {
   background-color: #222;
   padding: 1em;
-  color: white;
-
+  color: #008080;
   text-align: center;
 }
 
@@ -22,26 +21,45 @@ main {
 
 img {
   width: 250px;
-  border: solid #808000 5px;
+  height:250px;
+  border: solid #800000 5px;
 }
 
 button {
-  background-color: #800080;
+  background-color: #400080;
   color: white;
 }
 
-.pictureContainer {
+.pictureBlock {
+  width: 300px;
+  height: 350px;
   display: inline-block;
-  width: 400px;
+  align-content: center;
+}
+
+.pictureContainer {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .displayDescription {
+  height: 250px;
+  width: 250px;
+  border: solid #800000 5px;
+  position: absolute;
+  color: white;
+}
+
+span {
   opacity: .5;
-  width: 200px;
+  position: relative;
+  z-index: 1;
 }
 
 footer {
   padding: 5px;
   background-color: #222;
-  color: white;
+  color: #008080;
 }
